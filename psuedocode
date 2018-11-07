@@ -1,0 +1,9 @@
+Game will start with message "PRESS ANY KEY TO START THE GAME"
+if a key is pressed then show word to be guessed in - - - - - - - format.
+Display number of guesses below the word to be guessed
+if correct letter is guessed then reveal that letter in the - - - - - - format.
+if incorrect letter is guessed then make number of guesses count down
+if a key other than a letter in the alphabet is pressed display "Please pick a letter"
+if user runs out of numnber of guesses then display " game over- you lost-try again"
+if user guesses correct word then display " you won" press any key to continue
+Game  will pick another word randomly from the array.
