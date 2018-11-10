@@ -1,9 +1,11 @@
-Game will start with message "PRESS ANY KEY TO START THE GAME"
-if a key is pressed then show word to be guessed in - - - - - - - format.
-Display number of guesses below the word to be guessed
-if correct letter is guessed then reveal that letter in the - - - - - - format.
-if incorrect letter is guessed then make number of guesses count down
+Game will start with message "Guess the letter I am thinking of"
+Computer will pick a letter at random from the array ["a","b","c"........."z"]
+The user will select a letter 
+if correct letter is guessed then "win" will count up
+display " your guess is correct"
+if incorrect letter is guessed 
+        then "lose" will count up
+        then "number of guesses" will count down
+        then guesses you have made will start displaying the letters you typed.
+if number of guesses =0 then display " game over- you lose"
 if a key other than a letter in the alphabet is pressed display "Please pick a letter"
-if user runs out of numnber of guesses then display " game over- you lost-try again"
-if user guesses correct word then display " you won" press any key to continue
-Game  will pick another word randomly from the array.
