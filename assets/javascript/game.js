@@ -18,22 +18,22 @@ var alreadyGuessedText = document.getElementById("alreadyGuessed-text");
 
         
     
-document.onkeyup=function(event){
+document.onkeyup=function(psychic){
 
-var userGuess=String.fromCharCode(event.keyCode).toLowerCase();
+var userGuess=String.fromCharCode(psychic.keyCode).toLowerCase();
 console.log(userGuess)   
 
-computerGuess=options[Math.floor(Math.random()*options.length)]
+var computerGuess=options[Math.floor(Math.random()*options.length)]
 console.log(computerGuess)
 
 for (var i=0;i<options.length;i++) {
     if(userGuess=='a'||userGuess=='b'||userGuess=='c'||userGuess=='d'||userGuess=='e'||userGuess=='f'||userGuess=='g'||userGuess=='h'||userGuess=='i'||
          userGuess=='j'||userGuess=='k'||userGuess=='l'||userGuess=='m'||userGuess=='n'||userGuess=='o'||userGuess=='p'||userGuess=='q'||userGuess=='r'||
          userGuess=='s'||userGuess=='t'||userGuess=='u'|| userGuess=='v'||userGuess=='w'||userGuess=='x'||userGuess=='y'||userGuess=='z'){
-
+            
         if(userGuess === computerGuess[i]){
              wins++;  
-        } else if (userGuess[i]!==computerGuess[i]){
+        } else if (userGuess[i]!== computerGuess[i]){
             losses++;
             guessesLeft--;
             guessedLetters.push(userGuess[i]);
@@ -50,8 +50,7 @@ for (var i=0;i<options.length;i++) {
         }
         
     }
-      
-      
+          
         
     directionsText.textContent= "";
     userChoiceText.textContent = "You chose: " + userGuess;
